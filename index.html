@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pua, Phoenix Loops Exercise</title>
+
+    <script>
+
+        //JavaScript code is written in this "script" block
+
+        // view this test in your developer tools console tab
+        
+    //JS for Triangle Loop
+        var sum = " ";
+        // loop to add "#" after every repetition
+        for (i=0; i<=7; i++) {
+            sum = sum + "#"
+            console.log(sum);
+        }
+    </script>
+
+    <script>
+    //JS for Art3mis & Parzival
+       // loop to create a number list of 100 
+        for (i=1; i <= 100; i++) {
+            // if statement that outputs "Art3mis & Parzival" 
+            if (i % 15 === 0) {
+                console.log("Art3mis & Parzival");
+  
+            }
+            // else if statement that outputs "Art3mis"
+            else if (i % 3 === 0) {
+                console.log("Art3mis");
+
+            }
+            // else if statement that outputs "Parzival"
+            else if (i % 5 === 0) {
+                console.log("Parzival");
+
+            }
+            // else statement that outputs the number if it does not meet conditions
+            else {
+                console.log(i);
+
+            }
+        }
+    
+    </script>
+
+    <script>
+    //JS for Chessboard
+        var chess = "";
+        // for loop for the vertical grouping
+        for (y = 0; y < 8; y++) {
+            // for loop for the horizontal grouping
+            for (x = 0; x < 8 ; x++) {
+                // ternary operator used to add a space or the pound sign
+                chess += (x % 2) == (y % 2) ? " " : "#";
+            }
+            // used to break each row
+            chess += "\n";
+        }
+        console.log(chess);
+    </script>
+</head>
+<body>
+    
+</body>
+</html>
