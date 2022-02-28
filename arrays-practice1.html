@@ -9,23 +9,52 @@
 <body>
     <script>
         // 01
-        function array (num, val) {
+        function array (num, val) { // initializes function 'array' and uses paramaters num and val as to what is being pushed into array 'list'
             var list = []
-            for (var i = 0; i < num; i++) {
+            for (var i = 0; i < num; i++) { // if i < num it will push the value however many times it is called
                 list.push(val)
             }
             return list
         }
 
         // 02
-        function reverse (a, b, c) {
+        function reverse ([a, b, c]) { // initializes function reverse and uses parameters 'a, b , c' as elements of an array
             var reversal = []
-            reversal.push(c, b, a)
+            reversal.push([c, b, a]) // pushes a reversed order of the paramater back to array 'reversal'
             return reversal
         }
 
         // 03
-           
+        function clear (array) { // initializes function clear and uses paramater to check an array of any undesirable elements
+            var list = []
+            for (var i = 0; i < array.length; i++)
+                if (array[i] != undefined && array[i] != null && array[i] != false && array[i] != "" && array[i] != 0) { //if any the elements contain the following, it removes each element and pushes back to the array 'list'
+                    list.push(array[i]);
+            }
+            return list
+        }    
+
+        // 04
+        function dupe (array) { // initializes function dupe and uses parameter array to check its elements of what duplicates
+            var list = []
+            for (var i = 0; i < array.length; i++) 
+            if (!list.includes(array[i])) {
+                list.push(array[i])
+            }
+            return list
+        }
+
+        // 05
+        function compare(array1, array2) {  // initializes function compare and uses parameters array1 and array2 to compare later
+            for(let i = 0; i < compare.length; i++){
+                if (array1[i] === array2[i]) { // compares the indexes of each array and will return true if equal
+                    return true
+                }
+                else {
+                    return false
+                }
+            }
+        }
     </script>
 </body>
 </html>
